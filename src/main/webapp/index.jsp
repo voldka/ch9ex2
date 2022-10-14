@@ -17,6 +17,7 @@
     </tr>
   <c:forEach var="product" items="${products}">
     <tr>
+<%--        dasd--%>
         <td><c:out value='${product.description}'/></td>
         <td class="right">${product.priceCurrencyFormat}</td>
         <td><form action="cart" method="post">
