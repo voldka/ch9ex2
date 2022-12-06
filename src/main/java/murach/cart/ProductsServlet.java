@@ -5,11 +5,13 @@ import murach.business.Product;
 import murach.data.ProductIO;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
+@WebServlet(name="product", urlPatterns = "/loadProducts")
 public class ProductsServlet extends HttpServlet {
 
     @Override

@@ -1,14 +1,17 @@
 package murach.cart;
 
+
+
 import murach.business.Cart;
 import murach.business.LineItem;
 import murach.business.Product;
 import murach.data.ProductIO;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
-
+@WebServlet(name="cart", urlPatterns = "/cart")
 public class CartServlet extends HttpServlet {
 
     @Override
