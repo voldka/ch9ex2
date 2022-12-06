@@ -22,7 +22,7 @@ public class ProductsServlet extends HttpServlet {
         String path = getServletContext().getRealPath("/WEB-INF/products.txt");
         ArrayList<Product> products = ProductIO.getProducts(path);
         session.setAttribute("products", products);
-
+//text
         String url = "/index.jsp";
         getServletContext()
                 .getRequestDispatcher(url)
